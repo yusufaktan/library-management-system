@@ -1,4 +1,4 @@
-package com.aktanyusuf.library_management_system;
+package com.aktanyusuf.starter;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
