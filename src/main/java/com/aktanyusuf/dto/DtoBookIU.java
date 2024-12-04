@@ -1,7 +1,13 @@
 package com.aktanyusuf.dto;
 
 import com.aktanyusuf.model.BookStatus;
+import lombok.AllArgsConstructor;
+import lombok.Data;
+import lombok.NoArgsConstructor;
 
+@Data
+@NoArgsConstructor
+@AllArgsConstructor
 public class DtoBookIU {
 
     private Long id;

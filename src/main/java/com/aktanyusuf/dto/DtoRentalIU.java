@@ -1,9 +1,15 @@
 package com.aktanyusuf.dto;
 
 import com.aktanyusuf.model.RentalStatus;
+import lombok.AllArgsConstructor;
+import lombok.Data;
+import lombok.NoArgsConstructor;
 
 import java.util.Date;
 
+@Data
+@NoArgsConstructor
+@AllArgsConstructor
 public class DtoRentalIU {
 
     private Long id;
