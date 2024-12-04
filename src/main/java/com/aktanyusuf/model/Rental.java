@@ -1,5 +1,7 @@
 package com.aktanyusuf.model;
 
+import com.aktanyusuf.dto.DtoBook;
+import com.aktanyusuf.dto.DtoUser;
 import jakarta.persistence.*;
 import lombok.AllArgsConstructor;
 import lombok.Data;
@@ -20,11 +22,11 @@ public class Rental {
 
     @ManyToOne
     @JoinColumn(name = "user_id", nullable = false)
-    private User user;
+    private DtoUser user;
 
     @ManyToOne
     @JoinColumn(name = "book_id", nullable = false)
-    private Book book;
+    private DtoBook book;
 
     @Column(name = "rental_date", nullable = false)
     private Date rentalDate;

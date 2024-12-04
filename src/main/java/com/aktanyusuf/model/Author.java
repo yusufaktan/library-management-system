@@ -1,5 +1,6 @@
 package com.aktanyusuf.model;
 
+import com.aktanyusuf.dto.DtoBook;
 import jakarta.persistence.*;
 import jakarta.validation.constraints.NotBlank;
 import jakarta.validation.constraints.Size;
@@ -35,6 +36,6 @@ public class Author {
     private Date birthDate;
 
     @OneToMany(mappedBy = "author", cascade = CascadeType.ALL)
-    private List<Book> books;
+    private List<DtoBook> books;
 
 }

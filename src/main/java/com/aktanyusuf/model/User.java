@@ -1,5 +1,6 @@
 package com.aktanyusuf.model;
 
+import com.aktanyusuf.dto.DtoBook;
 import jakarta.persistence.*;
 import jakarta.validation.constraints.Email;
 import jakarta.validation.constraints.NotBlank;
@@ -41,6 +42,6 @@ public class User {
             joinColumns = @JoinColumn(name = "user_id"),
             inverseJoinColumns = @JoinColumn(name = "book_id")
     )
-    private List<Book> rentedBooks;
+    private List<DtoBook> rentedBooks;
 
 }

@@ -1,5 +1,7 @@
 package com.aktanyusuf.model;
 
+import com.aktanyusuf.dto.DtoAuthor;
+import com.aktanyusuf.dto.DtoCategory;
 import jakarta.persistence.*;
 import jakarta.validation.constraints.NotBlank;
 import jakarta.validation.constraints.Size;
@@ -28,11 +30,11 @@ public class Book {
 
     @ManyToOne
     @JoinColumn(name = "author_id", nullable = false)
-    private Author author;
+    private DtoAuthor author;
 
     @ManyToOne
     @JoinColumn(name = "category_id", nullable = false)
-    private Category category;
+    private DtoCategory category;
 
     @Enumerated(EnumType.STRING)
     private BookStatus bookStatus = BookStatus.AVAILABLE;
